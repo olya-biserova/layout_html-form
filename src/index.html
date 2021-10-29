@@ -16,17 +16,18 @@
       method="post"
       onsubmit="onSubmit()">
 
-      <fieldset class="block">
+      <fieldset class="input">
         <legend>Personal information</legend>
-        <div class="form-field">
+        <div class="formfield block">
           <label for="surname">Surname:</label>
           <input
-        type="text"
-        name="surname:"
-        id="surname"
-        autocomplete="off">
+            type="text"
+            name="surname:"
+            id="surname"
+            autocomplete="off"
+          >
         </div>
-        <div class="form-field">
+        <div class="formfield block">
           <label for="name">Name:</label>
           <input
         type="text"
@@ -34,7 +35,7 @@
         id="name"
         autocomplete="off">
         </div>
-        <div class="form-field">
+        <div class="formfield block">
           <label for="age">How old are You?</label>
           <input
         type="number"
@@ -43,14 +44,12 @@
         max="100"
         id="age">
         </div>
-        <div class="form-field">
+        <div class="formfield block">
           <label for="birth">Full date of birth:</label>
           <input
         type="date"
         name="Full date of birth:"
-        placeholder="mm / dd / yyyy"
-        id="birth"
-        autocomplete="off">
+        id="birth">
         </div>
 
         <div class="form-field">
@@ -64,10 +63,9 @@
         </div>
       </fieldset>
 
-      <fieldset class="block">
+      <fieldset class="input">
         <legend>Registration</legend>
-
-        <div class="form-field">
+        <div class="formfield block">
           <label for="email">E-mail:</label>
           <input
         type="email"
@@ -76,7 +74,6 @@
         id="email"
         autocomplete="off">
         </div>
-
         <div class="form-field">
           <label for="password">Password:</label>
           <input
@@ -87,18 +84,19 @@
         id="password">
         </div>
       </fieldset>
-      <fieldset class="block">
+      <fieldset class="input">
         <legend>An interesting fact about you!</legend>
 
-        <div class="form-field">
+        <div class="formfield block">
           Do you love cats?
           <label for="love">
             <input
-        type="radio"
-        name="love"
-        value="y"
-        id="love">
-        Yes
+              type="radio"
+              name="love"
+              value="y"
+              id="love"
+            >
+              Yes
           </label>
           <label for="love">
             <input
@@ -108,53 +106,49 @@
         No
           </label>
         </div>
-        <div class="block">
-          <label for="color">What is your favorit color?</label>
+        <div class="formfield block">
+          <label for="color">What is your favorite color?</label>
           <input
       type="color"
       id="color">
         </div>
-        <div class="form-field">
+        <div class="formfield block">
           <label for="time">What time do you go to bed?</label>
           <input
           type="time"
           id="time">
         </div>
-        <div class="form-field">
-          <label for="cars">
-      What are you favorite brand of cars?
-            <select name="cars"
+        <div class="formfield block">
+          <label for="cars">What are your favorite brand of cars?</label>
+          <select name="cars"
         multiple
         id="cars">
-              <option selected>BMW</option>
-              <option selected>Audi</option>
-              <option selected>Lada</option>
-            </select>
-          </label>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
         </div>
-
-        <label for="range">How do you rate our work?</label>
         <div class="form-field">
+          <label for="range">How do you rate our work?</label>
           <input
         type="range"
-          min="0"
-        max="11"
-        value="0"
+          min="1"
+        max="10"
+        value="1"
         id="range"
-        autocomplete="off">
+          >
         </div>
       </fieldset>
-      <fieldset class="block">
-        <legend>Additional info:</legend>
-        <div class="form-field">Comments:
-          <label for="comments">
-            <textarea
-          name="comments"
-          id="comments"
-          cols="20"
+      <fieldset class="input">
+        <legend>Additional info</legend>
+        <div class="formfield block">
+          <label for="com">Comments:</label>
+          <textarea
+          name="Comments"
+          id="com"
+          cols="15"
           rows="2">
-            </textarea>
-          </label>
+          </textarea>
         </div>
         <div class="form-field">
           <label for="yn">Would you recommend us?</label>
@@ -164,8 +158,8 @@
             <option value="n">no</option>
           </select>
         </div>
-        <button type="submit">Submit</button>
       </fieldset>
+      <button type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
